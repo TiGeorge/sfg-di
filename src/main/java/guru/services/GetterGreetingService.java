@@ -3,10 +3,10 @@ package guru.services;
 import org.springframework.stereotype.Service;
 
 @Service
-public class SetterInjectedGreetingService implements GreetingService {
+public class GetterGreetingService implements GreetingService {
+
     @Override
     public String sayGreeting() {
-        return "Hello World - Setter";
+        return "Hello - I was injected by the getter";
     }
-
 }

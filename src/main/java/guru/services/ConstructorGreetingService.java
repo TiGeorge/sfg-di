@@ -1,12 +1,13 @@
 package guru.services;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
 @Service
+@Primary
 public class ConstructorGreetingService implements GreetingService {
     @Override
     public String sayGreeting() {
-        return "Hello World - Constructor";
+        return "Hello - I was injected via the constructor!!!";
     }
-
 }
