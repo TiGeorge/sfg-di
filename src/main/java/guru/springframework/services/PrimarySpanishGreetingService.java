@@ -1,4 +1,4 @@
-package guru.services;
+package guru.springframework.services;
 
 public class PrimarySpanishGreetingService implements GreetingService {
 

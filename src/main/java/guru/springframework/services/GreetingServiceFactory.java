@@ -1,4 +1,4 @@
-package guru.services;
+package guru.springframework.services;
 
 public class GreetingServiceFactory {
 
@@ -8,7 +8,7 @@ public class GreetingServiceFactory {
         this.greetingRepository = greetingRepository;
     }
 
-    public GreetingService createGreetingService(String lang) {
+    public GreetingService createGreetingSevice(String lang) {
 
         switch (lang){
             case "en":

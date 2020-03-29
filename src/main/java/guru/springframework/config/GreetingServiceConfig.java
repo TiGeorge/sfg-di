@@ -1,8 +1,8 @@
-package guru.config;
+package guru.springframework.config;
 
-import guru.services.GreetingRepository;
-import guru.services.GreetingService;
-import guru.services.GreetingServiceFactory;
+import guru.springframework.services.GreetingRepository;
+import guru.springframework.services.GreetingService;
+import guru.springframework.services.GreetingServiceFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Primary;
@@ -20,21 +20,20 @@ public class GreetingServiceConfig {
     @Primary
     @Profile({"default", "en"})
     GreetingService primaryGreetingService(GreetingServiceFactory greetingServiceFactory){
-        return greetingServiceFactory.createGreetingService("en");
+        return greetingServiceFactory.createGreetingSevice("en");
     }
 
     @Bean
     @Primary
     @Profile("es")
     GreetingService primarySpanishGreetingService(GreetingServiceFactory greetingServiceFactory){
-        return greetingServiceFactory.createGreetingService("es");
+        return greetingServiceFactory.createGreetingSevice("es");
     }
 
     @Bean
     @Primary
     @Profile("de")
-    GreetingService primaryGermanGreetingService(GreetingServiceFactory greetingServiceFactory) {
-        return greetingServiceFactory.createGreetingService("de");
+    GreetingService primaryGermanGreetingService(GreetingServiceFactory greetingServiceFactory){
+        return greetingServiceFactory.createGreetingSevice("de");
     }
-
-    }
+}
