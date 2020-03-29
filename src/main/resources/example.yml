@@ -1,0 +1,26 @@
+# this is a comment
+
+name: George
+
+names: # Comment
+  -John
+  -Paul
+  -Ringo
+
+pound_sign: "#"
+
+book:
+  author: Joe Buck
+  publisher: Random House
+
+thruth: yes
+
+another_truth: True
+
+more_true: true
+
+false: no # No, false, FALSE
+
+string_val: "This is it's quote"
+
+colon_String: "vflkj: lkj lkj"

@@ -8,7 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
-//@ComponentScan(basePackages = {"guru.springframework.services", "guru.springframework", "guru.springframework.examplebeans"})
 public class SfgDiApplication {
 
 	public static void main(String[] args) {
